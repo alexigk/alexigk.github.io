@@ -1,0 +1,215 @@
+
+*{
+    font-family: 'Courier mono',monospace;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    background-image: url('image2.jpg');
+    background-repeat: no-repeat;
+    background-size: 400%;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#background{
+    width: 100%;
+    height: 500px;
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#backcontent{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+}
+
+#bachelor, #contact{
+    margin-top: -20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+li{
+    float: left;
+}
+
+li:hover a{
+    color: #00ff99;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+#list2{
+    margin-top: 300px;
+}
+
+#about{
+    position: relative;
+    display: block;
+    padding-top: 600px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto;
+}
+
+#aboutme{
+    margin-top: 50px;
+}
+
+#projects{
+    position: relative;
+    display: block;
+    color: white;
+    text-align: center;
+    width: auto;
+    padding-top: 150px;
+}
+
+button{
+    width: 300px;
+    height: 150px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#buttons1{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 0px;
+    margin-top: 50px;
+}
+
+#buttons2{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-gap: 0px;
+    margin-top: 100px;
+}
+
+span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+}
+
+span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Courier mono',monospace;
+    
+}
+
+span a:before,
+span a:after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+span a:before{
+    color: #00ff99;
+    background: black;
+    transform: rotateY(0deg) translateZ(25px);
+}
+
+span a:after{
+    color: #00ff99;
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+#b1:before,
+#b1:after{
+      content: "A Musical Interface";
+}
+
+#b2:before,
+#b2:after{
+    content: "Login Form";
+}
+
+#b3:before,
+#b3:after{
+    content: "Buffer Overflow Attack";
+}
+
+#b4:before,
+#b4:after{
+    content: "Alpha Compiler";
+}
+
+h1{text-align: center;}
+
+#skills{
+    position: relative;
+    display: block;
+    color: white;
+    justify-content: center;
+    width: auto;
+    padding-top: 150px;
+}
+
+#skillblock{
+    width: 600px;
+    height: 180px;
+    border-radius: 16px;
+    border: 1px solid #00ff99;
+    margin-left: auto;
+    margin-right: auto;
+}
