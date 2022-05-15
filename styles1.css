@@ -48,13 +48,23 @@ h1{
 }
 
 ul{
+    white-space: nowrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+}
+
+ul li{
+    font-size: initial;
+}
+
+ul li a{
+    float: none;
+    display: inline-block;
 }
 
 li{
@@ -91,7 +101,7 @@ li a{
 }
 
 #aboutme{
-    margin-top: 50px;
+    margin-top: 150px;
 }
 
 #projects{
@@ -149,8 +159,8 @@ span a:before,
 span a:after{
     position: absolute;
     content: "";
-    height: 100px;
-    width: 250px;
+    height: 120px;
+    width: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,22 +186,22 @@ span a:hover{
 
 #b1:before,
 #b1:after{
-      content: "A Musical Interface";
+      content: "/aMusicalInterface";
 }
 
 #b2:before,
 #b2:after{
-    content: "Login Form";
+    content: "/loginForm";
 }
 
 #b3:before,
 #b3:after{
-    content: "Buffer Overflow Attack";
+    content: "/bufferOverflowAttack";
 }
 
 #b4:before,
 #b4:after{
-    content: "Alpha Compiler";
+    content: "/alphaCompiler";
 }
 
 h1{text-align: center;}
