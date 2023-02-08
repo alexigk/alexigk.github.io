@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alexandros Gkekas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+    <meta name="description" content="discoplateau">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="header">
+        <div id="name">
+            <p>Alexandros Gkekas</p>
+            <p id="ui">UI/UX Designer</p>
+        </div>
+        <div id="menubar">
+            <ul>
+                <li><a class="nav1" id="1" href="#about" onclick="showContent(this.id)">.about</a></li>
+                <li><a class="nav3" id="3" href="#experience" onclick="showContent(this.id)">.experience</a></li>
+                <li><a class="nav4" id="4" href="#projects" onclick="showContent(this.id)">.projects</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="aboutme">
+                Computer Science Bachelor at the University of Crete. FrontEnd Developer and UI/UX Designer.
+            </div>
+            <div class="icons">
+                <a class="fa fa-github" href="https://github.com/alexigk"></a>
+                <a class="fa fa-envelope" href="mailto:gekasalexandros@gmail.com"></a>
+                <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/alexandros-gekas-25b4a823a/"></a>
+                <a class="fa fa-file-pdf-o"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="experience">
+        <div class="container">
+            <a href="https://www.vodafone.gr/"><img src="vodafone.jpg" alt="vodafone.gr" width="220px"
+                    height="140px"></a>
+            <a href="https://bakavos.gr/"><img src="bakavos.png" alt="bakavos.gr" width="200px" height="140px"></a>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container" id="prj">
+            <ul>
+                <li><a href="https://github.com/alexigk/Musical-Interface" id="link1">musical interface/</a>
+                    <p class="description">A media player implemented in Angular</p>
+                </li>
+                <li><a href="https://github.com/alexigk/Login-Form" id="link2">login form/</a>
+                    <p class="description">Fillout form for scheduling covid-19 vaccination randevouz</p>
+                </li>
+                <li><a href="https://github.com/alexigk/Alpha-Compiler" id="link3">alpha compiler/</a>
+                    <p class="description">A compiler for the language Alpha in C</p>
+                </li>
+                <li><a href="https://github.com/alexigk/databaseManipulation" id="link4">DB manipulation/</a>
+                    <p class="description">Process automation in the UoC's payroll department</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
